@@ -1,0 +1,76 @@
+<div class="content_ container">
+    <div class="row">
+        <div class="col-lg-12 col-12 left_side">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+                <div ngxSlickItem *ngFor="let slide of imageUrls" class="slide">
+                    <img src="{{ slide.img }}" alt="" width="100%">
+                </div>
+
+            </ngx-slick-carousel>
+        </div>
+        <!-- <div class="col-lg-4 col-12 right_side register" style="position: relative;">
+            <div class="step1" *ngIf="tel==null&&otp==null else templateName2">
+                <div class="text_register">สมัครสมาชิก</div>
+                <div class="input_register">
+                    <input type="text" style="text-align: center;" class="form-control " placeholder="เบอร์โทรศัทพ์" name="tel" id="tel">
+                </div>
+                <button type="button" (click)="confirm_tel()" class="btn btn-warning btn_register">ตกลง</button>
+            </div>
+            <ng-template #templateName2>
+                <div class="step2" *ngIf="tel!=null&&otp==null else templateName3">
+
+                    <div class="text_register">ยืนยันรหัส OTP</div>
+                    <div style="color:red; text-align:center;">{{message_otp}}</div>
+                    <div class="input_register">
+                        <input type="text" style="text-align: center;" class="form-control " placeholder="รหัส OTP" name="otp" id="otp">
+                    </div>
+                    <button type="button" (click)="confirm_otp()" class="btn btn-warning btn_register">ตกลง</button>
+                </div>
+            </ng-template>
+            <ng-template #templateName3>
+                <img class="img_deposit_withdraw" src="/assets/images/content/bank.png?v=1.1" alt="">
+
+            </ng-template>
+        </div> -->
+    </div>
+
+    <div class="container content_area_set">
+        <img class="imgae_logo_incontent" src="/assets/images/logo/logo.png?v=1.2" alt="">
+        <div class="des_text_content">
+            <label style="color:#EBCD0A">TUfa888</label> คือ เว็บ<label style="color:#CF080B">พนันออนไลน์</label> ที่มีทั้ง การเดิมพันฟุตบอล หรือที่เรียกว่า แทงบอลออนไลน์ และกีฬาออนไลน์ เว็บไซต์เรายังเปิดบริการ คาสิโนออนไลน์ บาคาร่าออนไลน์ เสือมังกร ป๊อกเด้ง
+            สล็อตออนไลน์ ซึ่ง <label style="color:#EBCD0A">TUfa888</label> เป็นเว็บไซต์ตรงจาก UFABET ลูกค้าจึงมั่นใจได้ว่า เว็บเราเป็นเว็บใหญ่ จ่ายจริง ไม่มีโกงแน่นอน เดิมพันเริ่มต้นแต่ 0.50 บาท เว็บยังมีรูปแบบที่เล่นง่าย เหมาะทั้งสำหรับ คอมพิวเตอร์ และ
+            มือถือสมาทโฟน จึงทำให้เว็บของเรานั้นเป็นเว็บที่ดีที่สุด ทางเราได้มีคาสิโนสดให้เลือกเล่นดังนี้ UFACASINO , UFASLOT , SA Gaming, Sexy Bacarat , Joker Gaming , Kink Maker , PG SLOT , Games Hall และ คาสิโนออนไลน์ ชั้นนำอีกมากมาย
+        </div>
+        <div class="des_text_content">
+            สมัครสมาชิก <label style="color:#EBCD0A">TUfa888</label> เว็บแทงบอลออนไลน์ คาสิโนออนไลน์ครบครัน วันนี้รับสิทธิพิเศษมากมาย ไม่ว่าจะเป็นโบนัสสำหรับการฝาก ครั้งแรก 20% มีค่าคอมมิชั่นสำหรับทุกยอดการเดิมพันของลูกค้า ไม่ว่าจะเป็นการคืนค่าคอมมิชชั่น
+            0.5% ในทุกๆยอดเดิมพันในรายการกีฬา ออนไลน์ของลูกค้า อีกทั้งยังมีการคืนยอดเสีย 0.7% ในรายการคาสิโนออนไลน์อีกด้วย และท่านยังสามารถเดิมพัน หรือ ฝากถอนได้ไม่มีขั้นต่ำอีกด้วย <label style="color:#EBCD0A">TUfa888</label> เป็นเว็บ<label style="color:#CF080B">พนันออนไลน์</label>            ที่มีมาตรฐานสูง และ ความปลอดภัยระดับเอเชีย ด้วยทางเว็บไซต์เรามีมาตรฐานที่สูง เราจึงต้องมีทีมงาน มืออาชีพที่คอยอัพเดท และ ปรับปรุง เพื่อความสะดวกสบายของท่านลูกค้าตลอดเวลา เราจึงได้ทำ การฝากถอนออนโต้ มาเพื่อท่านลูกค้าโดยเฉพาะ
+        </div>
+        <div class="des_text_content">
+            <div>ระบบฝาก-ถอน ออโต้ รวดเร็วทันใจ ภายใน 5 นาที</div> เพื่อที่จะได้ง่ายขึ้นต่อการทำรายการ ท่านสามารถทำรายการฝากถอนออโต้ได้ที่ หน้าเว็บไซต์ของเราได้เลย ขั้นตอนการทำก็ไม่ยุ่งยาก หากท่านทำการโอนเงินเข้าระบบเสร็จสิ้น ระบบของเราจะทำงานโอนเงิน เข้าไปในระบบของการเดิมพันของท่านโดยทันที
+            ท่านไม่ต้องแจ้งทีมงาน เพื่อยืนยันหลักฐานการโอน ระบบจะตรวจสอบและทำการโอนเงินเข้าให้เองโดยอัตโนมัติ
+        </div>
+    </div>
+    <div class="row" style="padding-top:20px;">
+        <div class="col-xs-15">
+            <img class="img_game hvr-push" src="/assets/images/content/sport.png" alt="">
+        </div>
+        <div class="col-xs-15">
+            <img class="img_game hvr-push" src="/assets/images/content/casino.png" alt="">
+        </div>
+        <div class="col-xs-15">
+            <img class="img_game hvr-push" src="/assets/images/content/game.png" alt="">
+        </div>
+        <div class="col-xs-15">
+            <img class="img_game hvr-push" src="/assets/images/content/esport.png" alt="">
+        </div>
+        <div class="col-xs-15">
+            <img class="img_game hvr-push" src="/assets/images/content/lotto.png" alt="">
+        </div>
+    </div>
+    <div class="text_copyright">
+        Copyright © 2021 TUfa888.COM All Rights Reserved.
+    </div>
+</div>
+
+<!-- <div _ngcontent-gyx-c3="" attr="https://lin.ee/3WytmJVY" class="qr-popup"><i _ngcontent-gyx-c3="" aria-hidden="true" class="fa fa-window-close fa-6 close-qr"></i></div> -->

@@ -1,0 +1,135 @@
+<div class="nav_area">
+    <div class="container" style="background:unset">
+        <div class="nav_top">
+            <div class="logo_nav">
+                <img src="assets/images/logo/logo.png?v=1.5" alt="">
+            </div>
+
+            <div class="login_area">
+                <form _ngcontent-jev-c0="" action="https://mtvip.club/api/loginUfabet.php" autocomplete="off" id="form2" method="post" name="form2" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                    <input _ngcontent-jev-c0="" id="ac" name="ac" type="hidden" value="loginUfabet">
+
+                    <ng-container *ngIf="language=='TH'">
+                        <input placeholder="ชื่อผู้ใช้" class="form-control input_login" type="text" name="username" id="username">
+                        <input placeholder="รหัสผ่าน" class="form-control input_login" type="password" name="password" id="password">
+                    </ng-container>
+
+
+                    <ng-container *ngIf="language=='LA'">
+                        <input placeholder="ຊື່ຜູ້ໃຊ້" class="form-control input_login" type="text" name="username" id="username">
+                        <input placeholder="ລະຫັດຜ່ານ" class="form-control input_login" type="password" name="password" id="password">
+                    </ng-container>
+
+                    <div class="badge badge-light btn_login" onclick="doPostBackBetufa('btnSignIn','')">
+                        <ng-container *ngIf="language=='TH'">
+                            เข้าสู่ระบบ
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ເຂົ້າ​ສູ່​ລະ​ບົບ
+                        </ng-container>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="change_language">
+                <select class="form-control" style="font-size: 11px;" [(ngModel)]="language" (change)="languageSet($event)" name="language" id="language">
+                    <option value="TH">
+                        <div style="width: 50px;height: 50px;">
+                        <img src="/assets/images/icon/laos-icon.png" alt="">
+                        </div>
+                        ภาษาไทย
+                    </option>
+                    <option value="LA">
+                        <div style="width: 50px;height: 50px;">
+                         <img src="/assets/images/icon/thai-icon.jpg" alt="">
+                        </div>
+                        ພາສາລາວ
+                    </option>
+                </select>
+            </div> -->
+
+        </div>
+        <div class="topTime">
+            <div class="left_side">
+                04-22-2020 06:17 PM (GMT+8)
+            </div>
+            <div class="right_side">
+
+            </div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">หน้าแรก</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='LA'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">ໜ້າເເຮກ</a>
+                    </div>
+                </ng-container>
+                <div class="link_nav cal_{{l+2}}">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/page/{{menu.menu_route}}" class=" links active ">{{menu.menu_name}}</a>
+                </div>
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==2">
+                        <a [routerLinkActiveOptions]="{exact:false}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">โปรโมชั่น</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='LA'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==2">
+                        <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">ໂປຣໂມຊັ່ນ</a>
+                    </div>
+                </ng-container>
+            </ng-container>
+            <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+
+    </div>
+</div>
+<div class="topnav_mobile" id="myTopnav">
+    <nav class="navbar navbar-expand-lg ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="icon_menu_mobile">
+            <span class="navbar-toggler-icon">   
+            </span>
+        </button>
+        <div class="logo_nav_m">
+            <!-- <img src="assets/images/logo/logo.png?v=1.4" alt=""> -->
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="text-align: left;">
+                <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                    <ng-container *ngIf="language=='TH'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==0" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home">หน้าหลัก</a>
+                        </li>
+                    </ng-container>
+
+                    <li class="nav-item  nav-menu-tab" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/page/{{menu.menu_route}}">{{menu.menu_name}}</a>
+                    </li>
+                    <ng-container *ngIf="language=='TH'" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==2">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion">โปรโมชั่น</a>
+                        </li>
+                    </ng-container>
+
+                    <!-- <li class="nav-item  nav-menu-tab" *ngIf="i==2">
+                        <a style="color: black;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="//affm/main">ลิ้งค์รับทรัพย์</a>
+                    </li> -->
+
+                </ng-container>
+            </ul>
+        </div>
+    </nav>
+    <!-- <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+        <a [routerLinkActive]="['active-menu']" *ngIf="i==0" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class="btn_mobile btn  links active cal_{{l+2}}">หน้าหลัก</a>
+        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/page/{{menu.menu_route}}" class="btn_mobile btn  width_{{i+1}} links active cal_{{l+2}}">{{menu.menu_name}}</a>
+        <a [routerLinkActive]="['active-menu']" *ngIf="i==2" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion" class="btn_mobile btn  links cal_{{l+2}}">โปรโมชั่น</a>
+    </ng-container> -->
+</div>
